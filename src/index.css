@@ -11,6 +11,7 @@
 */
 * {
   margin: 0;
+  font-family: "Ubuntu", "Open Sans", sans-serif;
 }
 /*
   Typographic tweaks!
@@ -60,3 +61,6 @@ h6 {
 #__next {
   isolation: isolate;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
