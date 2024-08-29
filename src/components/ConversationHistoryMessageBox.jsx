@@ -12,7 +12,7 @@ const ConversationHistoryMessageBox = ({
   console.log(feedback);
   console.log(rating);
   return (
-    <div className="w-full bg-purple h-fit flex flex-col p-2 gap-4">
+    <div className="w-full bg-purple h-max-content flex flex-col p-2 gap-4">
       <div className="flex gap-2 items-start">
         {/* <div className="flex items-center gap-1 flex-grow w-full"> */}
         <img src={avatar} alt="" className="w-6 h-6  shrink-0" />

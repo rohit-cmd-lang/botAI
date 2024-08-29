@@ -14,7 +14,7 @@ import {
   addRating,
   addFeedback,
 } from "../../features/chatSlice";
-import StarRating from "../StarRating";
+import StarRating from "../Rating";
 import FeedbackBox from "../FeedbackBox";
 
 import "../styles.css";
@@ -59,7 +59,7 @@ const ChatPage = () => {
       </div>
       <div className="relative px-4 flex-grow flex flex-col homepage-gradient">
         <Navigation />
-        <div className="px-4 overflow-y-auto mt-auto max-h-[calc(100vh-80px)] hidden-scrollbar">
+        <div className="px-4 overflow-y-auto mt-auto max-h-[calc(100vh-80px)] hidden-scrollbar w-full">
           {conversations.map((conversation, index) => (
             <div key={index}>
               <ChatBox text={conversation.question} type="question" />

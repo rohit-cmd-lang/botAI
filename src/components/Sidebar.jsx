@@ -16,9 +16,9 @@ const Sidebar = ({ isOpen, onClose }) => {
   };
   return (
     <div
-      className={`fixed top-0 left-0 h-full bg-white shadow-lg transform ${
+      className={` fixed top-0 left-0 h-full bg-white shadow-lg transform ${
         isOpen ? "translate-x-0" : ""
-      } transition-transform duration-300 w-52 sidebar opacity-100`}
+      } transition-transform duration-300 w-52 sidebar opacity-100 md:relative md:w-52 md:translate-x-0`}
     >
       <div
         className="flex items-center justify-between w-full h-12 bg-purple p-4 mb-4 cursor-pointer"

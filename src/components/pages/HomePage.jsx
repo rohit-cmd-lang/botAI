@@ -51,7 +51,7 @@ const HomePage = ({ data }) => {
       <div className="w-52 hidden sm:block">
         <Sidebar />
       </div>
-      <div className="relative px-4 flex flex-col flex-grow homepage-gradient">
+      <div className=" relative px-4 flex flex-col flex-grow homepage-gradient">
         <Navigation />
 
         <div className="flex flex-col justify-center items-center flex-grow p-4">

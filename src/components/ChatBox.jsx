@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 
 const ChatBox = ({ text, type }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const dispatch = useDispatch();
 
   const handleLike = () =>
     dispatch(toggleLikeDislike({ index, value: "like" }));
@@ -14,7 +15,7 @@ const ChatBox = ({ text, type }) => {
     dispatch(toggleLikeDislike({ index, value: "dislike" }));
   return (
     <div
-      className="w-full h-max-content flex px-5 py-4 rounded-[20px] chatcard-bg gap-4 mb-4 items-start shadow-lg relative hover:transition-all overflow-hidden"
+      className="w-full h-max-content flex px-5 py-4 rounded-[20px] chatcard-bg gap-4 mb-4 items-center shadow-lg relative hover:transition-all"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
