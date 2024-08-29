@@ -15,7 +15,7 @@ import {
 } from "../../features/chatSlice";
 import { useNavigate } from "react-router-dom";
 import "../styles.css";
-import StarRating from "../starRating";
+
 const HomePage = ({ data }) => {
   const question = useSelector((state) => state.chat.currentQuestion);
   const answer = useSelector((state) => state.chat.currentAnswer);
