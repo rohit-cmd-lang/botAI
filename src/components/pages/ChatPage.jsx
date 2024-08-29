@@ -14,7 +14,7 @@ import {
   addRating,
   addFeedback,
 } from "../../features/chatSlice";
-import StarRating from "../starRating";
+import StarRating from "../StarRating";
 import FeedbackBox from "../FeedbackBox";
 
 import "../styles.css";
